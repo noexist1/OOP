@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/iivan/CPP_TASKS/Task2/HashTable.cpp
+HashTable.h
+C:/Users/iivan/CPP_TASKS/Task2/HashTable.h
+stdexcept
+-
+
+C:/Users/iivan/CPP_TASKS/Task2/HashTable.h
+vector
+-
+string
+-
+list
+-
+iostream
+-
+
