@@ -27,6 +27,7 @@ void start(){
 void computer()
 {
     int turn;
+    int lose = 0;
     number created;
     created.random();
 
@@ -65,8 +66,20 @@ void computer()
         check = check.checkout(created, cnv_turn);
         list.make_turn(check, cnv_turn);
         list.show();
+        if (list.list.size() == 10){
+            lose = 1;
+            break;
+        }
     }
-    with_computer(3);
+    if (lose != 1){
+        with_computer(3);
+    }
+    else{
+        with_computer(5);
+        with_computer(7);
+        created.print();
+    }
+    with_computer(6);
     c = getch();
     if (c == 78 || c == 110) {
         start();
@@ -79,6 +92,7 @@ void player(){
 
     int num;
     int turn;
+    int lose;
 
     with_player(1);
     cin >> num;
@@ -120,14 +134,24 @@ void player(){
         check = check.checkout(created, cnv_turn);
         list.make_turn(check, cnv_turn);
         list.show();
+        if (list.list.size() == 10){
+            lose = 1;
+            break;
+        }
     }
-    with_player(5);
+    if (lose != 1){
+        with_player(5);
+    }
+    else{
+        with_player(6);
+    }
+    with_player(7);
     c = getch();
     if (c == 78 || c == 110) {
         start();
     }
     else if (c == 89 || c == 121)
-        player();
+        computer();
 }
 
 

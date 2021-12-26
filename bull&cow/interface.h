@@ -31,10 +31,19 @@ void with_computer(int n)
             cout << "Make your next turn\n";
             break;
         case 3:
-            cout << "CONGRATULATION! YOU WON!\nDo you want to play again?\n    Y/N\n";
+            cout << "CONGRATULATION! YOU WON!\n";
             break;
         case 4:
             cout << "Result:\n";
+            break;
+        case 5:
+            cout << "The attempts ended. Try again\n";
+            break;
+        case 6:
+            cout << "Do you want to play again?\n    Y/N\n";
+            break;
+        case 7:
+            cout << "Correct number:\n";
             break;
     }
 }
@@ -55,7 +64,13 @@ void with_player(int n){
             cout << "Result:\n";
             break;
         case 5:
-            cout << "CONGRATULATION 2ND PLAYER!\n YOU WON!\nDo you want to play again?\n    Y/N\n";
+            cout << "CONGRATULATION 2ND PLAYER!\n YOU WON!\n";
+            break;
+        case 6:
+            cout << "CONGRATULATION 1ND PLAYER!\n YOU WON!\n";
+            break;
+        case 7:
+            cout << "Do you want to play again?\n    Y/N\n";
             break;
     }
 }
